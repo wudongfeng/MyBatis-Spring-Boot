@@ -18,7 +18,7 @@ public class Video2AudioService {
     private Logger logger=Logger.getLogger(Video2AudioService.class);
 
     public void makeFolder(String folder){
-        List<String> cmd =new ArrayList<>();
+        List<String> cmd =new ArrayList<String>();
         cmd.clear();
         cmd.add("mkdir");
         cmd.add(folder);
@@ -26,7 +26,7 @@ public class Video2AudioService {
 
     }
     public void convert(String ffmpegUri,String originFileUri,String resultUri){
-        List<String> cmd =new ArrayList<>();
+        List<String> cmd =new ArrayList<String>();
         cmd.clear();
         cmd.add(ffmpegUri);
         cmd.add("-i");
